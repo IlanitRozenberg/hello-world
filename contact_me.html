@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Form
+    </title>
+</head>
+<body>
+    <header style= "background-color: rgb(37, 184, 184); color: seashell;
+     font-size: 100px; font-style: italic; height: 150px; text-align: center ;
+     border:solid black 5px;" > Contact Me 
+     </header>
+
+    <form style= "padding: 10px; border:solid black 5px; border-top: 0px;">
+        <div  style= "padding: 10px ; padding-left: 0px;";> 
+            <label for= "firstName">First name</label>
+            <input style="position: relative; left: 39px;" type= "text" id= "firstName" name= "firstName">
+            <label style="position: relative; left: 50px;" for= "lastName">Last name</label>
+            <input style="position: relative; left: 50px;" type= "text" id= "lastName" name= "lastName">
+        </div>
+        <div  style= "padding: 10px ; padding-left: 0px;";> 
+           <label for= "EmailAddress">Email Address</label>
+           <input style="position: relative; left: 15px;" type= "email" id= "EmailAdresss" name= "EmailAdresss">
+        </div>
+        <div  style= "padding: 10px ; padding-left: 0px;";> 
+            <label for= "JobDiscription">Job Discription</label>
+            <input style="position: relative; left: 10px;" type= "text" id= "JobDiscription" name= "JobDiscription">
+        </div >
+        <div style= "padding: 10px ; padding-left: 0px;";> 
+            <p>Job Requests</p>
+            <div>
+            <input type="checkbox" id="Full time Job" name="Full time Job">
+            <label for="Full time Job">Full time job</label>
+            </div>
+            <div>
+            <input type="checkbox" id="Part time Job" name="Part time Job">
+            <label for="Part time Job">Part time job</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Suitable for moms" name="Suitable for moms">
+                <label for="Suitable for moms">Suitable for moms</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Suitable for students" name="Suitable for students">
+                <label for="Suitable for students">Suitable for students</label>
+            </div>
+        </div>
+         <div style= "padding: 10px ; padding-left: 0px;";> 
+            <label for= "AdditionalDetails"></label>
+            <textarea  id="AdditionalDetails" name="Additional Details" cols="70" 
+            rows="5" style= "color: rgb(158, 154, 154);">Additional Details...</textarea>
+         </div>
+         <div  style= "padding: 10px ; padding-left: 0px;";> 
+            <label for= "submit"></label>
+            <input type= "submit" id= "submit" name= "JobDiscription">
+        </div>
+        <div  style= "padding: 10px ; padding-left: 0px;";> 
+            <label for= "addFile"></label>
+            <input  type= "file" id= "addFile" name= "addFile">
+         </div>
+    </form>
+</body>
