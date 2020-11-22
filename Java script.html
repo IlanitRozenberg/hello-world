@@ -1,0 +1,45 @@
+<!doctype html>
+<html> 
+<head>
+    <title>
+        example
+    </title>
+
+    <button onclick="document.getElementById('dogs').src='after.png'">wash</button>
+    <img id="dogs" src="before.png" width="500px">
+    <button onclick="dryDogs()">dry</button>
+    <script>
+        function dryDogs () {
+            document.getElementById('dogs').src='before.png';
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <p id= "p1" style="max-width: 800px;"> </p>
+    <script>
+        document.getElementById('p1').innerHTML= "()()()";
+    </script>
+
+    <button onclick="duplicate()">duplicate string</button>
+
+    <script>
+        function duplicate () {
+            document.getElementById('p1').innerText=document.getElementById('p1').innerHTML + document.getElementById('p1').innerHTML;
+        }
+    </script>
+
+    <p id="p2"></p>
+    <script>
+        function foo(){
+            document.getElementById('p2').innerHTML= "The end";
+        }
+
+        foo();
+    </script>
+
+
+</body> 
+</html>
