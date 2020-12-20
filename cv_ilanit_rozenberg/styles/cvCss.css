@@ -156,7 +156,7 @@ div, p, h1, h2, h3, h4, h5, ul, li, a, span{
     font-size:20px;
 }
 
-.download a, .contact a{
+.download a, .contact a, .contact-list a{
     text-decoration:none;
     color:black;
     background-color:#DDD;
@@ -164,7 +164,7 @@ div, p, h1, h2, h3, h4, h5, ul, li, a, span{
     border:1px solid white;
 }
 
-.download a:hover, .contact a:hover{
+.download a:hover, .contact a:hover, .contact-list a:hover{
     text-decoration:none;
     color:#999;
     border:1px solid #999;
@@ -174,6 +174,7 @@ div, p, h1, h2, h3, h4, h5, ul, li, a, span{
 
 .download{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .social{
