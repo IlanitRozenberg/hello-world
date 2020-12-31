@@ -1,0 +1,104 @@
+body{
+    margin:0px;
+    font-size:15px;
+    font-family:century gothic;
+    background:url(contact-me-background.jpg) fixed 100% no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
+    background-size:cover;
+}
+
+div, p, h1, h2, h3, h4, h5, ul, li, a, span{
+    margin:0px;
+    padding:0px;
+}
+
+#conteneur-contact{
+    padding-top:100px;
+}
+
+.contact{
+    max-width:660px;
+    margin:auto;
+}
+
+.contact h2{
+  padding-bottom:50px;
+  font-size:25px;
+  font-weight:100;
+  text-transform:uppercase;
+  color:#FFF;
+}
+
+.contact h3{
+	margin-top:15px;
+	margin-bottom:10px;
+	color:#fff;
+	font-size:17px;
+    font-weight:100;
+    text-align:left;
+}
+
+.contact label{
+	color:#fff;
+	font-size:14px;
+}
+
+.input textarea{
+    margin-top:10px;
+    margin-bottom:20px;
+    min-height: 50px;
+	max-height:150px;
+    max-width:100%;
+    width:100%;
+}
+
+input[type="email"], input[type="text"],  textarea{
+    height:25px;
+    width: 300px;
+	padding:2.5px 8px;
+	background-color:rgba(0,0,0,0.4);
+	border:none;
+	border-bottom:1px solid #E3E3E3;
+	box-shadow:none;
+	box-sizing:border-box;
+	border-radius:0;
+	outline:none;
+    color:#fff;
+}
+
+input[type="email"]{
+	width:100%;
+}
+
+.fname{
+    float: left;
+    margin-right: 60px;
+}
+
+.lname{
+    float: left;
+}
+
+.contact-button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+	height:25px;
+	padding:5px 30px;
+	border:0;
+	cursor:pointer;
+    color:white;
+    text-decoration:none;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.contact-button:hover{
+	background-color:#FFF;
+	color:#000;
+	text-decoration:none;
+	transition:0.4s;
+}
+
+.back-button{
+    font-size: 20px;
+}

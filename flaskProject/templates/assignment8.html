@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies</title>
+</head>
+<body>
+    {% include ('home-button.html') %}
+    {% include ('Header.html') %}
+    {% if Hobbies[0] %}
+        <h2> My hobbies are:</h2>
+      <ul>
+
+        {% for hobby in Hobbies %}
+            <li> {{ hobby }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+        <h3> Have no time for hobbies</h3>
+    {% endif %}
+</body>
+</html>
