@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 9</title>
+    <script src="../static/assignment9.js"></script>
+</head>
+<body>
+    {% include ('header.html') %}
+    <script> load('{{ search_term }}')</script>
+    <div class="search-form">
+        <div class="search-input-box">
+            <form method="GET" action="/assignment9">
+                <h1>Search by first name</h1>
+                <input name="search"><br><br>
+                <input type="submit">
+            </form>
+        </div>
+
+    </div>
+    <div class="contact-list-9">
+        <h1>Contacts:</h1>
+        <main>
+        </main>
+    </div>
+    <div class="credentials" style="position: absolute; top: 45px; right: 15px">
+        {% if session.get('logged_in') == False %}
+            <div class="register">
+                <form method="POST" action="/assignment9">
+                    <h2>username:</h2>
+                    <input name="username"><br><br>
+                    <input type="submit">
+                </form>
+            </div>
+        {% else %}
+            <div class="logged">
+                <h2>Hello, {{ session.get('username') }}</h2>
+                <form method="POST" action="/assignment9">
+                    <button type="submit" name="username" value="">Logout</button>
+                </form>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
