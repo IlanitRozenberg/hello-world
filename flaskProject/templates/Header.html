@@ -1,4 +1,18 @@
+<link rel="stylesheet" href="../static/header.css">
 <header>
-    {% set Title = 'Hobbies' %}
-    <h1> {{ Title | upper }} </h1>
+<div class="menu">
+        <ul>
+            <li><a href="{{ url_for('home_func') }}">Home Page </a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-about">About</a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-Education">Education</a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-Technological-Skills">Technological-Skills</a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-Army-Service">Army-Service</a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-Experience">Experience</a></li>
+            <li><a href="{{ url_for('home_func') }}#conteneur-Languages">Languages</a></li>
+            <li><a href="{{ url_for('contact_me_func') }}">Contact me</a></li>
+            <li><a href="{{ url_for('contacts_func') }}">Contacts list</a></li>
+            <li><a href="{{ url_for('assignment8_func') }}">Assignment 8</a></li>
+            <li><a href="{{ url_for('assignment9_func') }}">Assignment 9</a></li>
+        </ul>
+    </div>
 </header>

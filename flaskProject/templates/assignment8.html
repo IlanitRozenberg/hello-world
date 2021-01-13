@@ -5,8 +5,11 @@
     <title>Hobbies</title>
 </head>
 <body>
-    {% include ('home-button.html') %}
-    {% include ('Header.html') %}
+    {% include ('header.html') %}
+
+    {% set Title = 'Hobbies' %}
+    <h1> {{ Title | upper }} </h1>
+
     {% if Hobbies[0] %}
         <h2> My hobbies are:</h2>
       <ul>
