@@ -34,7 +34,7 @@
             </div>
         {% else %}
             <div class="logged">
-                <h2>Hello, {{ session.get('username') }}</h2>
+                <h2>Hello, {{ session.get('username') }}!</h2>
                 <form method="POST" action="/assignment9">
                     <button type="submit" name="username" value="">Logout</button>
                 </form>
