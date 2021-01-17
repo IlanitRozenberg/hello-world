@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <script>
+        function sendAlert(){
+            alert("Users list has been modifies successfully");
+        }
+    </script>
+</head>
+<body>
+    {% include ('header.html') %}
+
+    <div style="padding-left: 20px">
+        <h2>Create a new user:</h2>
+        <form action="/assignment10" method="POST" style="padding-left: 20px">
+            <label for="id">ID</label><br>
+            <input name="id" id="id" type="number"><br><br>
+
+            <label for="email">Email</label><br>
+            <input name="email" id="email" type="email"><br><br>
+
+            <label for="full_name">Full Name</label><br>
+            <input name="full_name" id="full_name" type="text"><br><br>
+
+            <button type="submit" onclick="sendAlert()">Submit</button>
+        </form>
+    </div>
+
+    <div style="padding-left: 20px">
+        <h2>Delete user:</h2>
+        <form action="/delete" method="GET"style="padding-left: 20px">
+            <label for="id">User ID:</label><br>
+            <input name="id" type="text"><br><br>
+            <button type="submit" onclick="sendAlert()">Submit</button>
+        </form>
+    </div>
+
+    <div style="padding-left: 20px">
+        <h2>Update user:</h2>
+        <form action="/update" method="POST" style="padding-left: 20px">
+            <label for="id">ID</label><br>
+            <input name="id" id="id" type="text"><br><br>
+            <label for="email">Email</label><br>
+            <input name="email" id="email" type="email"><br><br>
+            <label for="full_name">Full Name</label><br>
+            <input name="full_name" id="full_name" type="text"><br><br>
+            <button type="submit" onclick="sendAlert()">Submit</button>
+        </form>
+    </div>
+
+
+    <div style="padding-left: 20px">
+        {% if users_list %}
+            <h1>Users List:</h1>
+            {% for user in users_list %}
+                <div style="padding: 10px">
+                    <div> {{ user.id }}. {{ user.full_name}} </div>
+                    <span>Email: </span>
+                    <a href="mailto:{{ user.mail }}"> {{ user.email }}</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h1>There are no users registered.</h1>
+        {% endif %}
+    </div>
+
+</body>
+</html>
