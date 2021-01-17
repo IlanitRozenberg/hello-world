@@ -1,7 +1,9 @@
 from flask import Flask, redirect, url_for, render_template, request, session
+from assignment10.app import assignment10
 
 app = Flask(__name__)
 app.secret_key = '123'
+app.register_blueprint(assignment10)
 
 
 @app.route('/contacts')
