@@ -14,6 +14,7 @@
             <li><a href="{{ url_for('assignment8_func') }}">Assignment 8</a></li>
             <li><a href="{{ url_for('assignment9_func') }}">Assignment 9</a></li>
             <li><a href="{{ url_for('assignment10.users') }}">Assignment 10</a></li>
+            <li><a href="{{ url_for('assignment11_func') }}">Assignment 11</a></li>
             {% if session.get('logged_in') == True %}
                 <span>Hello, {{ session.get('username') }}!</span>
             {% endif %}
