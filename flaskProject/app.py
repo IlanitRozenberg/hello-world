@@ -1,6 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request, session, make_response
 from assignment10.app import assignment10, interact_db
-import json
 
 app = Flask(__name__)
 app.secret_key = '123'
